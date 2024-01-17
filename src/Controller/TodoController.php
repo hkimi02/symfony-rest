@@ -52,7 +52,7 @@ class TodoController extends AbstractController
         $todo = $managerRegistry->getRepository(Todo::class)->find($id);
 
         if (!$todo) {
-            return new JsonResponse(['status' => 'Todo not found!'], JsonResponse::HTTP_NOT_FOUND);
+            return new JsonResponse(['status' => 'Todo not  found!'], JsonResponse::HTTP_NOT_FOUND);
         }
 
         $data = [
